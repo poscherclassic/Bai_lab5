@@ -1,0 +1,274 @@
+/* LAB 5: chi thay cac o trong co ma 1.1 den 5.6.
+   Base responsive tu Lab 4 da hoan thanh. Khong xoa @media. */
+:root {
+  --bg: #f3f6fa;
+  --text: #172b3a;
+  --primary: #0f5c63;
+  --hover: #083e43;
+  --soft: #e3f2f2;
+  --focus: #b34500;
+  --line: #b6c5cf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+header,
+main,
+footer {
+  max-width: 70rem;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+header {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.menu a {
+  display: inline-block;
+  padding: .4rem .6rem;
+  border-radius: .4rem;
+}
+
+section {
+  margin-block: 2rem;
+  scroll-margin-top: 1rem;
+}
+
+.hero {
+  background: var(--soft);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li,
+.tag {
+  background: var(--soft);
+  padding: .2rem .6rem;
+  border-radius: .5rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  padding: 1.25rem;
+  background: white;
+  overflow-wrap: anywhere;
+}
+
+.card h3 {
+  margin-top: .5rem;
+}
+
+.card a {
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  padding: .75rem 1rem;
+  border: 0;
+  background: var(--primary);
+  color: white;
+  border-radius: .5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form {
+  max-width: 40rem;
+  background: white;
+  border-radius: .75rem;
+  padding: 1.25rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.help {
+  font-size: .9rem;
+  margin: .25rem 0 0;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid #64748b;
+  border-radius: .4rem;
+}
+
+textarea {
+  min-height: 8rem;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width:48rem) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width:64rem) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* NHIEM VU 1: focus va menu. Khong xoa outline mac dinh. */
+a:focus-visible,
+/* 1.1 */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline-style: solid;
+  /* 1.2 */
+  outline-width:  0.1875rem;
+  /* 1.3 */
+  outline-color: var( --soft);
+  /* 1.4 */
+  outline-offset: 0.1875rem;
+  /* 1.5 */
+}
+
+.menu a:hover {
+  background: var(--hover);
+}
+
+/* 1.6 */
+/* NHIEM VU 2: button */
+.button {
+  transition: background-color 180ms ease,
+    /* 2.1 */
+    /* 2.2 *
+    /* 2.3 */
+    transform 180ms ease;
+}
+
+.button:hover {
+  background: var(--hover);
+}
+
+/* 2.4 */
+.button:active {
+  /* 2.5 */
+  transform: translateY(0.0625rem);
+  /* 2.6 */
+}
+
+/* NHIEM VU 3: card va link */
+.card {
+  transition: transform
+    /* 3.1 */
+    180ms ease;
+}
+
+/* 3.2 */
+.card:hover {
+  /* 3.3 */
+  transform: translateY(-0.25rem);
+  /* 3.4; 3.5 */
+}
+
+.card:focus-within{
+  transform: translateY(-0.25rem);
+}
+
+/* 3.6 */
+/* NHIEM VU 4 nam trong index.html. */
+/* NHIEM VU 5: form */
+input,
+textarea {
+  width: 100%;
+  /* 5.1 */
+  box-sizing: border-box;
+  /* 5.2 */
+  padding: 0.75rem;
+  /* 5.3 */
+  min-width: 0;
+  /* 5.4 */
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 5.5 */
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+/* 5.6 */

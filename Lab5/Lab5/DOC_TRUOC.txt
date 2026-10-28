@@ -1,0 +1,8 @@
+BẢN KHỞI ĐẦU LAB 5 DÀNH CHO SINH VIÊN
+
+Giải nén toàn bộ ZIP, đọc Huong_dan_Lab_5.pdf và mở bai-tap-lab5/index.html.
+Giữ nguyên mã nền; chỉ thay các dấu trống có số chú thích theo hướng dẫn.
+Có 32 ô CHƯA ĐIỀN: 24 ô trong css/style.css (nhóm 1, 2, 3, 5), 8 ô trong index.html (nhóm 4).
+Lưu file và tải lại trang sau từng nhiệm vụ. Các phần tương tác/form chưa hoàn thiện là chủ ý của bài tập.
+Sau bài luyện, áp dụng vào Portfolio V4 để tạo V5.
+ZIP này không có đáp án hoặc mã hoàn chỉnh.

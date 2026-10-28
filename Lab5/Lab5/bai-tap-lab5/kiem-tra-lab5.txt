@@ -1,0 +1,8 @@
+Họ tên: Đỗ Trung Kiên
+Mã SV:2071020107
+Lớp:CNTT 20-02
+Kết quả T01–T08: đạt
+Một lỗi: lỗi trong HTML là bị lặp type="email". đã sảu và kiểm tra lại 
+Áp dụng Portfolio: selector mẫu -> selector cá nhân | lý do
+Sử dụng AI nếu có: dùng AI để kiểm tả xem viết đã đúng chưa có bị lỗi không. kiểm tra lại AI xem đã sửa đúng 
+chưa bằng cách mở trang web lên nhấn f12 để kiểm tra
