@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lab 5 · Portfolio thực hành</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header><a class="brand" href="#gioi-thieu">FIT / PORTFOLIO V5</a>
+        <nav class="menu" aria-label="Điều hướng chính">
+            <a href="#gioi-thieu">Giới thiệu</a><a href="#ky-nang">Kỹ năng</a>
+            <a href="#du-an">Dự án</a><a href="#lo-trinh">Lộ trình</a><a href="#lien-he">Liên hệ</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="gioi-thieu"><span>LAB 5 · HTML5 + CSS3</span>
+            <h1>Xin chào, tôi là Kiên </nav></h1>
+            <p>Sinh viên CNTT đang xây dựng Portfolio có thể dùng bằng chuột và bàn phím.</p>
+            <a class="button" href="#lien-he">Liên hệ với tôi</a>
+        </section>
+        <section id="ky-nang">
+            <h2>Kỹ năng</h2>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive</li>
+            </ul>
+        </section>
+        <section id="du-an">
+            <h2>Dự án</h2>
+            <div class="project-grid">
+                <article class="card"><span class="tag">HTML5</span>
+                    <h3>Trang giới thiệu cá nhân</h3>
+                    <p>Tổ chức nội dung với header, nav, main và footer.</p><a href="#lo-trinh">Xem lộ trình HTML5</a>
+                </article>
+                <article class="card"><span class="tag">Responsive</span>
+                    <h3>Bố cục nhiều thiết bị</h3>
+                    <p>Chia cột bằng Grid, dùng rem và media query.</p><a href="#lo-trinh">Xem lộ trình CSS</a>
+                </article>
+                <article class="card"><span class="tag">Trải nghiệm</span>
+                    <h3>Form liên hệ dễ dùng</h3>
+                    <p>Nhãn rõ ràng, kiểm tra dữ liệu và chỉ báo focus.</p><a href="#lien-he">Thử form liên hệ</a>
+                </article>
+            </div>
+        </section>
+        <section id="lo-trinh">
+            <h2>Lộ trình học tập</h2>
+            <ol>
+                <li>Lab 2: nội dung HTML5.</li>
+                <li>Lab 3: CSS, Flexbox và Grid.</li>
+                <li>Lab 4: rem và media query.</li>
+                <li>Lab 5: tương tác và form.</li>
+            </ol>
+        </section>
+        <section id="lien-he">
+            <h2>Liên hệ</h2>
+            <p>Form mô phỏng, chưa gửi email hoặc lưu vào cơ sở dữ liệu. Chỉ nhập dữ liệu giả.</p>
+            <form action="ket-qua.html" method="get">
+                <div class="form-field">
+                    <label for="fullname">Họ tên (bắt buộc)</label><!-- 4.1 -->
+                    <input id="fullname" name="fullname" type="text" autocomplete="name" required
+                        minlength="2"><!-- 4.4 -->
+                </div>
+                <div class="form-field"><label for="email">Email (bắt buộc)</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required
+                        aria-describedby="email-help"><!-- 4.2; 4.3 -->
+                    <p class="help" id="email-help">Ví dụ: an@example.com</p>
+                </div>
+                <div class="form-field"><label for="message">Nội dung (bắt buộc)</label>
+                    <textarea id="message" name="message" rows="4" required minlength="10" maxlength="50"
+                        aria-describedby="message-help"></textarea><!-- 4.5; 4.6; 4.7 -->
+                    <p class="help" id="message-help">Nhập từ 10 đến 500 ký tự.</p>
+                </div>
+                <button class="button" type="submit">Kiểm tra biểu mẫu</button><!-- 4.8 -->
+            </form>
+        </section>
+    </main>
+    <footer>FIT – DNU · Bài mẫu Lab 5 · HTML/CSS thuần</footer>
+</body>
+
+</html>
